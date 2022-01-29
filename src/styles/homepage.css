@@ -1,0 +1,483 @@
+:root {
+  --primary-red: rgb(201, 0, 0);
+  --primary-grey: rgb(68, 68, 68);
+  --roboto: 'Roboto', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navigation-bar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-grey);
+  font-family: var(--roboto);
+  color: white;
+  z-index: 1;
+}
+
+.navigation-bar .navigation-bar-left {
+  width: 200px;
+}
+
+.navigation-bar .navigation-bar-left .navigation-links {
+  list-style: none;
+}
+
+.navigation-bar .navigation-bar-left .navigation-links li {
+  display: inline-block;
+  margin: 0 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.navigation-bar .navigation-bar-right {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-bar .navigation-bar-right .current-user-container {
+  width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.navigation-bar .navigation-bar-right .current-user-container i {
+  font-size: 23px;
+  color: var(--primary-red);
+}
+
+.navigation-bar .navigation-bar-right .current-user-container .current-user-image {
+  height: 40px;
+}
+
+.navigation-bar .navigation-bar-right .navigation-links {
+  list-style: none;
+}
+
+.navigation-bar .navigation-bar-right .navigation-links li {
+  display: inline-block;
+  margin: 0 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.popular-movie-section {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.popular-movie-section .popular-movie-image {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+
+.popular-movie-section .popular-movie-background-tint {
+  position: absolute;
+  width: 978px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(90deg, black, rgba(0, 0, 0, 0.1));
+}
+
+.popular-movie-section .movie-info-container {
+  min-height: 400px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px;
+  color: white;
+  font-family: var(--roboto);
+}
+
+.popular-movie-section .movie-info-container .popular-movie-title {
+  font-size: 80px;
+}
+
+.popular-movie-section .movie-info-container .popular-movie-info {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.popular-movie-section .movie-info-container .movie-info-rating-and-date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+}
+
+.popular-movie-section .movie-info-container .movie-info-rating-and-date-container .movie-info-rating-container {
+  height: 30px;
+  width: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+}
+
+.popular-movie-section .movie-info-container .movie-info-rating-and-date-container .movie-info-rating-container .movie-info-rating {
+  padding-left: 10px;
+}
+
+.popular-movie-section .movie-info-container .movie-info-rating-and-date-container .movie-info-release-date-container {
+  height: 30px;
+  width: 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+}
+
+.popular-movie-section .movie-info-container .movie-info-rating-and-date-container .movie-info-release-date-container .movie-info-date {
+  padding-left: 10px;
+}
+
+.popular-movie-section .movie-info-container .movie-info-button-container {
+  height: 50px;
+  width: 311px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular-movie-section .movie-info-container .movie-info-button-container button {
+  font-family: var(--roboto);
+  font-size: 16px;
+  padding: 4px 15px;
+  border: 1px solid var(--primary-red);
+  background-color: var(--primary-red);
+  color: white;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+
+.popular-movie-section .movie-info-container .movie-info-button-container button:hover {
+  background-color: white;
+  color: var(--primary-red);
+}
+
+.movies-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--primary-grey);
+  padding-top: 30px;
+  font-family: var(--roboto);
+}
+
+.movies-section .section-titles {
+  font-size: 30px;
+  padding: 10px;
+  color: red;
+}
+
+.movies-section .popular-movies-container {
+  min-height: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 70px;
+}
+
+.movies-section .popular-movies-container .popular-movies-containers {
+  height: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movies-section .popular-movies-container .popular-movies-containers .popular-movies-image {
+  height: 250px;
+  cursor: pointer;
+}
+
+.movies-section .popular-movies-container .popular-movies-containers .popular-movies-titles {
+  width: 167px;
+  font-size: 20px;
+  padding: 0;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movies-section .popular-movies-container .popular-movies-containers .popular-movies-rating-container {
+  height: 30px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movies-section .popular-movies-container .popular-movies-containers .popular-movies-rating-container i {
+  font-size: 18px;
+  color: var(--primary-red);
+}
+
+.movies-section .popular-movies-container .popular-movies-containers .popular-movies-rating-container span {
+  color: white;
+}
+
+.movies-section .top-rated-movies-container {
+  min-height: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 70px;
+}
+
+.movies-section .top-rated-movies-container .top-rated-movies-containers {
+  height: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movies-section .top-rated-movies-container .top-rated-movies-containers .top-rated-movies-image {
+  height: 250px;
+  cursor: pointer;
+}
+
+.movies-section .top-rated-movies-container .top-rated-movies-containers .top-rated-movies-title {
+  width: 167px;
+  font-size: 20px;
+  padding: 0;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movies-section .top-rated-movies-container .top-rated-movies-containers .top-rated-movies-rating-container {
+  height: 30px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movies-section .top-rated-movies-container .top-rated-movies-containers .top-rated-movies-rating-container i {
+  font-size: 18px;
+  color: var(--primary-red);
+}
+
+.movies-section .top-rated-movies-container .top-rated-movies-containers .top-rated-movies-rating-container span {
+  color: white;
+}
+
+.movies-section .upcoming-movies-container {
+  min-height: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 70px;
+}
+
+.movies-section .upcoming-movies-container .upcoming-movies-containers {
+  height: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movies-section .upcoming-movies-container .upcoming-movies-containers .upcoming-movies-image {
+  height: 250px;
+  cursor: pointer;
+}
+
+.movies-section .upcoming-movies-container .upcoming-movies-containers .upcoming-movies-title {
+  width: 167px;
+  font-size: 20px;
+  padding: 0;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movies-section .upcoming-movies-container .upcoming-movies-containers .upcoming-movies-rating-container {
+  height: 30px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movies-section .upcoming-movies-container .upcoming-movies-containers .upcoming-movies-rating-container i {
+  font-size: 18px;
+  color: var(--primary-red);
+}
+
+.movies-section .upcoming-movies-container .upcoming-movies-containers .upcoming-movies-rating-container span {
+  color: white;
+}
+/*# sourceMappingURL=homepage.css.map */

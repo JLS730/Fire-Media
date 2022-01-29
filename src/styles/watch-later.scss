@@ -1,0 +1,176 @@
+:root {
+    --primary-red: rgb(201, 0, 0);
+    --primary-grey: rgb(68, 68, 68);
+    --roboto: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.navigation-bar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-grey);
+    font-family: var(--roboto);
+    color: white;
+    z-index: 1;
+
+    .navigation-bar-left {
+        width: 200px;
+
+        .navigation-links {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                // width: 200px;
+                margin: 0 30px;
+                color: white;
+                cursor: pointer;
+                // background-color: aqua;
+            }
+        }
+    }
+    
+    .navigation-bar-right {
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .current-user-container {
+            width: 135px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+
+            i {
+                font-size: 23px;
+                color: var(--primary-red);
+            }
+
+            .current-user-image {
+                height: 40px;
+            }
+        }
+
+        .navigation-links {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                // width: 200px;
+                margin: 0 30px;
+                color: white;
+                cursor: pointer;
+                // background-color: aqua;
+            }
+        }
+    }
+}
+
+.watch-list-section {
+    width: 100%;
+    min-height: 887px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-grey);
+    padding: 70px 0;
+
+    .watch-list-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        // height: 500px;
+        width: 1200px;
+        gap: 50px 70px;
+        // background-color: white;
+
+        .watch-list-movie-containers {
+            height: 400px;
+            width: 250px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            // background-color: chocolate;
+
+            .watch-list-movie-image {
+                height: 300px;
+                box-shadow: 0 3px 7px rgba(0, 0, 0, .7);
+            }
+
+            .watch-list-movie-name-container {
+                width: 90%;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: center;
+                color: white;
+                
+                .watch-list-movie-name {
+                    // width: 200px;
+                    font-family: var(--roboto);
+                    font-size: 20px;
+                    // color: white;
+                }
+            }
+
+
+            .watch-list-button-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                // background-color: white;
+                width: 100%;
+                
+                .watch-list-watch-button {
+                    font-family: var(--roboto);
+                    font-size: 16px;
+                    padding: 3px 30px;
+                    border: 1px solid var(--primary-red);
+                    background-color: var(--primary-red);
+                    color: white;
+                    transition: all .4s ease;
+                    cursor: pointer;
+                }
+                .watch-list-watch-button:hover {
+                    background-color: rgb(255, 255, 255);
+                    color: var(--primary-red);
+                }
+                
+                .watch-list-trash-button {
+                    font-family: var(--roboto);
+                    font-size: 16px;
+                    padding: 3px 10px;
+                    border: 1px solid var(--primary-red);
+                    background-color: var(--primary-red);
+                    color: white;
+                    transition: all .4s ease;
+                    cursor: pointer;
+                }
+                .watch-list-trash-button:hover {
+                    background-color: rgb(255, 255, 255);
+                    color: var(--primary-red);
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,342 @@
+:root {
+  --primary-red: rgb(201, 0, 0);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-signup-section {
+  position: absolute;
+  height: 927px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+
+.login-signup-section .close-button {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 30px;
+  right: 30px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.login-signup-section .close-button:hover {
+  color: var(--primary-red);
+}
+
+.login-signup-section .login-signup-container {
+  width: 600px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #686767;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid black;
+}
+
+.login-signup-section .login-signup-container .login-signup-select {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-red);
+  color: white;
+  font-size: 18px;
+}
+
+.login-signup-section .login-signup-container .login-signup-select .login {
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  padding-top: 17px;
+  border: 1px solid black;
+}
+
+.login-signup-section .login-signup-container .login-signup-select .login.open {
+  border-bottom: none;
+}
+
+.login-signup-section .login-signup-container .login-signup-select .signup {
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  padding-top: 17px;
+  border: 1px solid black;
+}
+
+.login-signup-section .login-signup-container .login-signup-select .signup.open {
+  border-bottom: none;
+}
+
+.login-signup-section .login-signup-container .create-account-info {
+  width: 400px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-signup-section .login-signup-container .create-account-info .info-containers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-signup-section .login-signup-container .create-account-info .info-containers label {
+  font-size: 20px;
+  color: white;
+}
+
+.login-signup-section .login-signup-container .create-account-info .info-containers input {
+  width: 200px;
+  font-size: 16px;
+  padding: 2px 4px;
+  border: 2px solid black;
+  outline: none;
+}
+
+.login-signup-section .login-signup-container .create-account-info .username-container.hidden {
+  display: none;
+}
+
+.login-signup-section .login-signup-container .create-account-info .password-confirm-container.hidden {
+  display: none;
+}
+
+.login-signup-section .login-signup-container .create-account-container {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-signup-section .login-signup-container .create-account-container button {
+  width: 150px;
+  height: 25px;
+  border: 1px solid black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-red);
+  color: white;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.login-signup-section .login-signup-container .create-account-container button:hover {
+  color: black;
+  background-color: white;
+}
+
+.login-signup-section .login-signup-container .create-account-container .create-account-submit.hidden {
+  display: none;
+}
+
+.login-signup-section .login-signup-container .create-account-container .login-account-submit.hidden {
+  display: none;
+}
+
+.login-signup-section.hidden {
+  display: none;
+}
+
+.login-section {
+  position: relative;
+  height: 927px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-section .background-tint {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: linear-gradient(140deg, rgba(0, 0, 0, 0.8) 0%, black 100%);
+  top: 0;
+  left: 0;
+}
+
+.login-section .login-container {
+  height: 400px;
+  width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #636363;
+  border: 2px solid var(--primary-red);
+  font-family: 'Roboto', sans-serif;
+  z-index: 1;
+}
+
+.login-section .login-container .login-header {
+  width: 800px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-section .login-container .login-header .login-header-text {
+  font-size: 30px;
+  color: white;
+}
+
+.login-section .login-container .accounts-container {
+  width: 1200px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-section .login-container .accounts-container .account-containers {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.login-section .login-container .accounts-container .account-containers .account-username {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-red);
+  border-top: 1px solid black;
+  bottom: -50px;
+  left: 0;
+  font-family: sans-serif;
+  font-size: 22px;
+  color: white;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.login-section .login-container .accounts-container .account-containers:hover .account-username {
+  bottom: 0;
+}
+
+.login-section .login-container .accounts-container .account-selection-1 {
+  background-image: url(../images/user-account-images/login-user.jpg);
+}
+
+.login-section .login-container .accounts-container .account-selection-2 {
+  background-image: url(../images/user-account-images/guest-user-2.png);
+  background-color: white;
+}
+
+.login-section .login-container .accounts-container .account-selection-3 {
+  background-image: url(../images/user-account-images/admin-user-2.png);
+  background-color: white;
+}
+
+.login-section .login-container .accounts-container .account-selection-4 {
+  background-image: url(../images/user-account-images/add-user.jpg);
+  border: none;
+}
+
+.login-section .login-container .accounts-container .account-selection-4 .account-4-username {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=login.css.map */

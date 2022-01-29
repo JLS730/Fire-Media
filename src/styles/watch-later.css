@@ -1,0 +1,214 @@
+:root {
+  --primary-red: rgb(201, 0, 0);
+  --primary-grey: rgb(68, 68, 68);
+  --roboto: 'Roboto', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.navigation-bar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-grey);
+  font-family: var(--roboto);
+  color: white;
+  z-index: 1;
+}
+
+.navigation-bar .navigation-bar-left {
+  width: 200px;
+}
+
+.navigation-bar .navigation-bar-left .navigation-links {
+  list-style: none;
+}
+
+.navigation-bar .navigation-bar-left .navigation-links li {
+  display: inline-block;
+  margin: 0 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.navigation-bar .navigation-bar-right {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-bar .navigation-bar-right .current-user-container {
+  width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.navigation-bar .navigation-bar-right .current-user-container i {
+  font-size: 23px;
+  color: var(--primary-red);
+}
+
+.navigation-bar .navigation-bar-right .current-user-container .current-user-image {
+  height: 40px;
+}
+
+.navigation-bar .navigation-bar-right .navigation-links {
+  list-style: none;
+}
+
+.navigation-bar .navigation-bar-right .navigation-links li {
+  display: inline-block;
+  margin: 0 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.watch-list-section {
+  width: 100%;
+  min-height: 887px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-grey);
+  padding: 70px 0;
+}
+
+.watch-list-section .watch-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1200px;
+  gap: 50px 70px;
+}
+
+.watch-list-section .watch-list-container .watch-list-movie-containers {
+  height: 400px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.watch-list-section .watch-list-container .watch-list-movie-containers .watch-list-movie-image {
+  height: 300px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+.watch-list-section .watch-list-container .watch-list-movie-containers .watch-list-movie-name-container {
+  width: 90%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  color: white;
+}
+
+.watch-list-section .watch-list-container .watch-list-movie-containers .watch-list-movie-name-container .watch-list-movie-name {
+  font-family: var(--roboto);
+  font-size: 20px;
+}
+
+.watch-list-section .watch-list-container .watch-list-movie-containers .watch-list-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.watch-list-section .watch-list-container .watch-list-movie-containers .watch-list-button-container .watch-list-watch-button {
+  font-family: var(--roboto);
+  font-size: 16px;
+  padding: 3px 30px;
+  border: 1px solid var(--primary-red);
+  background-color: var(--primary-red);
+  color: white;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+
+.watch-list-section .watch-list-container .watch-list-movie-containers .watch-list-button-container .watch-list-watch-button:hover {
+  background-color: white;
+  color: var(--primary-red);
+}
+
+.watch-list-section .watch-list-container .watch-list-movie-containers .watch-list-button-container .watch-list-trash-button {
+  font-family: var(--roboto);
+  font-size: 16px;
+  padding: 3px 10px;
+  border: 1px solid var(--primary-red);
+  background-color: var(--primary-red);
+  color: white;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+
+.watch-list-section .watch-list-container .watch-list-movie-containers .watch-list-button-container .watch-list-trash-button:hover {
+  background-color: white;
+  color: var(--primary-red);
+}
+/*# sourceMappingURL=watch-later.css.map */

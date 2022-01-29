@@ -1,0 +1,26 @@
+:root {
+    --primary-red: rgb(201, 0, 0);
+    --primary-grey: rgb(68, 68, 68);
+    --roboto: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sign-in-successful-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-grey);
+
+    h1 {
+        font-family: var(--roboto);
+        color: white;
+        font-size: 60px;
+    }
+}

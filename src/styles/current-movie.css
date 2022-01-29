@@ -1,0 +1,412 @@
+:root {
+  --primary-red: rgb(201, 0, 0);
+  --primary-grey: rgb(68, 68, 68);
+  --roboto: 'Roboto', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navigation-bar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-grey);
+  font-family: var(--roboto);
+  color: white;
+  z-index: 1;
+}
+
+.navigation-bar .navigation-bar-left {
+  width: 200px;
+}
+
+.navigation-bar .navigation-bar-left .navigation-links {
+  list-style: none;
+}
+
+.navigation-bar .navigation-bar-left .navigation-links li {
+  display: inline-block;
+  margin: 0 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.navigation-bar .navigation-bar-right {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-bar .navigation-bar-right .current-user-container {
+  width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.navigation-bar .navigation-bar-right .current-user-container i {
+  font-size: 23px;
+  color: var(--primary-red);
+}
+
+.navigation-bar .navigation-bar-right .current-user-container .current-user-image {
+  height: 40px;
+}
+
+.navigation-bar .navigation-bar-right .navigation-links {
+  list-style: none;
+}
+
+.navigation-bar .navigation-bar-right .navigation-links li {
+  display: inline-block;
+  margin: 0 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.current-movie-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--primary-grey);
+}
+
+.current-movie-section .current-movie-trailer-container {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.current-movie-section .current-movie-trailer-container .iframe-tint {
+  position: absolute;
+  width: 800px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.current-movie-section .current-movie-trailer-container .iframe-tint.hover {
+  -webkit-animation: tint-hover .4s ease forwards;
+          animation: tint-hover .4s ease forwards;
+}
+
+.current-movie-section .current-movie-trailer-container .iframe-tint.hover-out {
+  -webkit-animation: tint-hover-out .4s ease forwards;
+          animation: tint-hover-out .4s ease forwards;
+}
+
+.current-movie-section .current-movie-info-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 20px 0 20px;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-image-container {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-image-container .current-movie-image {
+  height: 500px;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container {
+  width: 60%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  font-family: var(--roboto);
+  color: white;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container .current-movie-title {
+  font-size: 50px;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container .current-movie-release-date-container {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container .current-movie-rating-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container .current-movie-rating-container i {
+  color: #ecdd04;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container .current-movie-rating-container .current-movie-rating {
+  padding-left: 20px;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container .current-movie-info {
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container .current-movie-button-container {
+  height: 50px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container .current-movie-button-container button {
+  font-family: var(--roboto);
+  font-size: 16px;
+  padding: 4px 15px;
+  border: 1px solid var(--primary-red);
+  background-color: var(--primary-red);
+  color: white;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+
+.current-movie-section .current-movie-info-section .current-movie-info-container .current-movie-button-container button:hover {
+  background-color: white;
+  color: var(--primary-red);
+}
+
+.current-movie-section .current-movie-credit-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  padding-bottom: 100px;
+  font-family: var(--roboto);
+}
+
+.current-movie-section .current-movie-credit-section .current-movie-credit-title {
+  width: 100%;
+  font-size: 50px;
+  padding: 50px 180px;
+  color: white;
+}
+
+.current-movie-section .current-movie-credit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1600px;
+  background-color: #313131;
+  border: 1px solid var(--primary-red);
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  padding: 40px 0;
+  gap: 40px 0;
+}
+
+.current-movie-section .current-movie-credit-container .current-movie-credits {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current-movie-section .current-movie-credit-container .current-movie-credits .current-movie-credit-image {
+  width: 167px;
+  height: 250px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+.current-movie-section .current-movie-credit-container .current-movie-credits .current-movie-credit-info-container {
+  width: 300px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.current-movie-section .current-movie-credit-container .current-movie-credits .current-movie-credit-info-container .current-movie-credit-name {
+  text-align: center;
+  font-size: 25px;
+}
+
+.current-movie-section .current-movie-credit-container .current-movie-credits .current-movie-credit-info-container .current-movie-credit-as {
+  text-align: center;
+  color: red;
+}
+
+.current-movie-section .current-movie-credit-container .current-movie-credits .current-movie-credit-info-container .current-movie-credit-character {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+@-webkit-keyframes tint-hover {
+  0% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+  }
+}
+
+@keyframes tint-hover {
+  0% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes tint-hover-out {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@keyframes tint-hover-out {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+/*# sourceMappingURL=current-movie.css.map */
